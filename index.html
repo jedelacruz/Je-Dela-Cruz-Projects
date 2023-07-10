@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Je Dela Cruz</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="/images/logoDarkMode.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    </head>
+    <body>
+        
+        <div class="cursor">
+
+        </div>
+
+        <div class="logo">
+            <img src="/images/logoDarkMode.png">
+        </div>
+
+
+        <div class="eye-follow-out-container">
+
+            <div class="eye-follow-container">
+                <div class="eye-follow-box" id="eye1">
+                    
+                </div>
+            </div>
+
+            <div class="eye-follow-container">
+                <div class="eye-follow-box" id="eye2">
+                    
+                </div>
+            </div>
+
+        </div>
+        
+
+        
+        <div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+        <div class="overlay" id="overlay">
+            <nav class="overlay-menu">
+                <ul>
+                    <li><a href="/home/index.html">Home</a></li>
+                    <li><a href="/about/index.html">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="/contact/index.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <section class="project-section">
+            <div class="project-section-container">
+
+                <div class="project-title">
+                    <h2>
+
+                        <span>M</span>
+                        <span>y</span>
+                        <span class="span-space">&nbsp;</span>
+
+                        <span>P</span>
+                        <span>r</span>
+                        <span>o</span>
+                        <span>j</span>
+                        <span>e</span>
+                        <span>c</span>
+                        <span>t</span>
+                        <span>s</span>
+                    </h2>
+                </div>
+
+                <div class="project-nav">
+                    <button class="btn active" onclick="filterSelection('all')">All Projects</button>
+                    <button class="btn" onclick="filterSelection('cPlus')">C ++</button>
+                    <button class="btn" onclick="filterSelection('java')">Java</button>
+                    <button class="btn" onclick="filterSelection('python')">Python</button>
+                    <button class="btn" onclick="filterSelection('net')">.Net</button>
+                    <button class="btn" onclick="filterSelection('webDevFront')">HTML / CSS / JS</button>
+                </div>
+
+                <div class="container">
+
+                    <div class="filterDiv webDevFront">
+                        <a href="https://github.com/jedelacruz/Link-Saver" class="featured-projects-box" id="projects-box-1" target="_blank">
+                                <div class="flex-projects-box">
+                                    <h1>Link Saver Extension.</h1>
+                                </div>
+                                
+                                
+                                <div class="languages-used">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JS</span>
+                                    <span>JSON</span>
+                                </div>
+                        </a>
+                    </div>
+
+                    <div class="filterDiv java">
+                        <a href="https://github.com/jedelacruz/Java-Programs" class="featured-projects-box" id="projects-box-1" target="_blank">
+                                <div class="flex-projects-box">
+                                    <h1>Java Programs.</h1>
+                                </div>
+                                
+                                
+                                <div class="languages-used">
+                                    <span>JAVA</span>
+                                </div>
+                        </a>
+                    </div>
+
+                    <div class="filterDiv cPlus">
+                        <a href="https://github.com/jedelacruz/CPlusPlus-Programs" class="featured-projects-box" id="projects-box-1" target="_blank">
+                                <div class="flex-projects-box">
+                                    <h1>C++ Programs.</h1>
+                                </div>
+                                
+                                
+                                <div class="languages-used">
+                                    <span>C++</span>
+                                </div>
+                        </a>
+                    </div>
+
+                    <div class="filterDiv python">
+                        <a href="https://github.com/jedelacruz/Python-Programs" class="featured-projects-box" id="projects-box-1" target="_blank">
+                                <div class="flex-projects-box">
+                                    <h1>Python Programs.</h1>
+                                </div>
+                                
+                                
+                                <div class="languages-used">
+                                    <span>PYTHON</span>
+                                </div>
+                        </a>
+                    </div>
+
+                    <div class="filterDiv net">
+                        <a href="https://github.com/jedelacruz/Inches-and-Pixels-App" class="featured-projects-box" id="projects-box-1" target="_blank">
+                                <div class="flex-projects-box">
+                                    <h1>Inches and Pixels App.</h1>
+                                </div>
+                                
+                                
+                                <div class="languages-used">
+                                    <span>VB.NET</span>
+                                    <span>SQl</span>
+                                </div>
+                        </a>
+                    </div>
+
+                    <div class="filterDiv webDevFront">
+                        <a href="https://jedelacruz.github.io/Inches-and-Pixels-Home/" class="featured-projects-box" id="projects-box-1" target="_blank">
+                                <div class="flex-projects-box">
+                                    <h1>Inches and Pixels Site.</h1>
+                                </div>
+                                
+                                
+                                <div class="languages-used">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JS</span>
+                                </div>
+                        </a>
+                    </div>
+
+                    <div class="filterDiv webDevFront">
+                        <a href="https://jedelacruz.github.io/Beshywap/" class="featured-projects-box" id="projects-box-1" target="_blank">
+                                <div class="flex-projects-box">
+                                    <h1>Beshywap Generator.</h1>
+                                </div>
+                                
+                                
+                                <div class="languages-used">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JS</span>
+                                </div>
+                        </a>
+                    </div>
+
+                    <div class="filterDiv webDevFront">
+                        <a href="https://github.com/jedelacruz/WebDev" class="featured-projects-box" id="projects-box-1" target="_blank">
+                                <div class="flex-projects-box">
+                                    <h1>WebDev Programs.</h1>
+                                </div>
+                                
+                                
+                                <div class="languages-used">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JS</span>
+                                </div>
+                        </a>
+                    </div>
+
+                    <div class="filterDiv webDevFront">
+                        <a href="https://jedelacruz.github.io/Batkins-Incorporated-Home/" class="featured-projects-box" id="projects-box-1" target="_blank">
+                                <div class="flex-projects-box">
+                                    <h1>Batkins Incorporated.</h1>
+                                </div>
+                                
+                                
+                                <div class="languages-used">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JS</span>
+                                </div>
+                        </a>
+                    </div>
+
+                    <div class="filterDiv java">
+                        <a href="https://github.com/jedelacruz/Kiosk-Machine-2" class="featured-projects-box" id="projects-box-1" target="_blank">
+                                <div class="flex-projects-box">
+                                    <h1>Kiosk App Console.</h1>
+                                </div>
+                                
+                                
+                                <div class="languages-used">
+                                    <span>JAVA</span>
+                                </div>
+                        </a>
+                    </div>
+
+                    <div class="filterDiv webDevFront">
+                        <a href="https://jedelacruz.github.io/sinisterJE-Home/" class="featured-projects-box" id="projects-box-1" target="_blank">
+                                <div class="flex-projects-box">
+                                    <h1>Sinister Je.</h1>
+                                </div>
+                                
+                                
+                                <div class="languages-used">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JS</span>
+                                </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <span>Developed by <a href="https://github.com/jedelacruz?tab=repositories" target="_blank"><span class="footer-name">Je Dela Cruz</span></a></span>
+        </footer>
+
+
+        <script src="app.js" async defer></script>
+    </body>
+</html>
