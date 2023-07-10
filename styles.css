@@ -499,6 +499,9 @@
     font-size: 14px;
     line-height: 40px;
   }
+.cursor{
+        display: none;
+    }
 
     
   }
