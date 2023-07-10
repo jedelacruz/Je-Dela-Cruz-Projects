@@ -15,7 +15,42 @@
   body {
     background-color: black;
   }
-  
+  #button {
+  display: inline-block;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 3%;
+  right: 2%;
+  transition: background-color .3s, opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f062";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 50px;
+  color: black;
+}
+#button:hover {
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button:hover::after {
+  color: white;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
   /* 
   
     this css is for the cursor
@@ -456,6 +491,14 @@
     .languages-used {
       font-size: 14px;
     }
+    #button {
+    width: 40px;
+    height: 40px;
+  }
+  #button::after {
+    font-size: 14px;
+    line-height: 40px;
+  }
 
     
   }
